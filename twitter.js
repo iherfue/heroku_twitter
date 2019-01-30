@@ -38,7 +38,7 @@ res.write('<html>');
       res.write('</style>');
     res.write('</head>');
 res.write('<body>');
-res.wrtie('<h1>Búsquedas de hashtag en twitter</h1>');
+res.write('<h1>Búsquedas de hashtag en twitter</h1>');
 res.write(`<form  method="GET">
               <input type="text" name="search">
               <input type="submit" value="enviar">
