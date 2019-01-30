@@ -1,4 +1,9 @@
-﻿//Modulos requeridos
+﻿let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
+//Modulos requeridos
 var url = require('url');
 const argv = require('yargs').argv;
 var http = require('http');
@@ -58,5 +63,5 @@ res.write('</html>');
 res.end();//fin del servidor
 
 });//final del client
-}).listen(8000);
+}).listen(port);
 
